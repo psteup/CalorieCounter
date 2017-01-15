@@ -2,11 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/idCalendar"
                 android:orientation="vertical"
                 android:background="@color/white"
                 android:weightSum="1">
 
-    <TextView android:id="@+id/idTitle"
+    <TextView android:id="@+id/idCalendarTitel"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:background="@color/blue"
@@ -17,7 +18,7 @@
               android:gravity="center"
               android:textStyle="bold"/>
 
-    <TextView android:id="@+id/idTitle2"
+    <TextView android:id="@+id/idCalendarSubtitel"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="@string/calender_calendar"
@@ -26,22 +27,22 @@
               android:gravity="center"
               android:textStyle="italic"
               android:layout_margin="@dimen/headlinespace"
-              android:layout_below="@+id/idTitle"/>
+              android:layout_below="@+id/idCalendarTitel"/>
 
     <CalendarView
-            android:id="@+id/idCalendarView"
+            android:id="@+id/idCalendarCalendarView"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin"
-            android:layout_below="@+id/idTodayButton"/>
+            android:layout_margin="@dimen/margin_2"
+            android:layout_below="@+id/idCalendarTodayButton"/>
 
-    <Button android:id="@+id/idTodayButton"
+    <Button android:id="@+id/idCalendarTodayButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calender_today"
             android:textColor="@color/black"
             android:textSize="@dimen/textsize"
             android:layout_centerInParent="true"
-            android:layout_below="@id/idTitle2"/>
+            android:layout_below="@id/idCalendarSubtitel"/>
 
 </RelativeLayout>
